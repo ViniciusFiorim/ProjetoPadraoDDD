@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.PojetoPadraoDDD.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../:\Sources\ProjetoPadraoDDD\PojetoPadraoDDD\.idea\.idea.PojetoPadraoDDD\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
