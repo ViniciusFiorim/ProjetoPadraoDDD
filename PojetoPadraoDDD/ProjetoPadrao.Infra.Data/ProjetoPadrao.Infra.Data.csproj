@@ -34,6 +34,7 @@
     </PropertyGroup>
     <ItemGroup>
         <Compile Include="Context\ProjetoPadraoContext.cs" />
+        <Compile Include="Migrations\Configuration.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
