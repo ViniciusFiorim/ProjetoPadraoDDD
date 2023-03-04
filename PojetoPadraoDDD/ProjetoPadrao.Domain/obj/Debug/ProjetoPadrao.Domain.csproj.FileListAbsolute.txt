@@ -1,6 +1,0 @@
-C:\Sources\ProjetoPadraoDDD\PojetoPadraoDDD\ProjetoPadrao.Domain\bin\Debug\ProjetoPadrao.Domain.dll
-C:\Sources\ProjetoPadraoDDD\PojetoPadraoDDD\ProjetoPadrao.Domain\bin\Debug\ProjetoPadrao.Domain.pdb
-C:\Sources\ProjetoPadraoDDD\PojetoPadraoDDD\ProjetoPadrao.Domain\obj\Debug\ProjetoPadrao.Domain.csprojAssemblyReference.cache
-C:\Sources\ProjetoPadraoDDD\PojetoPadraoDDD\ProjetoPadrao.Domain\obj\Debug\ProjetoPadrao.Domain.csproj.CoreCompileInputs.cache
-C:\Sources\ProjetoPadraoDDD\PojetoPadraoDDD\ProjetoPadrao.Domain\obj\Debug\ProjetoPadrao.Domain.dll
-C:\Sources\ProjetoPadraoDDD\PojetoPadraoDDD\ProjetoPadrao.Domain\obj\Debug\ProjetoPadrao.Domain.pdb
