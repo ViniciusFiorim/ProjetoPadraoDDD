@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ProjetoModeloDDD.ViewModels.ClienteViewModel>
+
+@{
+    ViewBag.Title = "IndexCliente";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New",  "CreateCliente")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(Model =>  Model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model =>  Model.SobreNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model =>  Model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model =>  Model.Ativo)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayFor(ModelItem =>  item.Nome)
+            </th>
+            <th>
+                @Html.DisplayFor(ModelItem =>  item.SobreNome)
+            </th>
+            <th>
+                @Html.DisplayFor(ModelItem =>  item.Email)
+            </th>
+            <th>
+                @Html.DisplayFor(ModelItem =>  item.Ativo)
+            </th>
+            <th>
+                @Html.ActionLink("Edit", "Editar", new { id=item.Id}) | 
+                @Html.ActionLink("Details", "Detalhes", new { id=item.Id}) | 
+                @Html.ActionLink("Delete", "Deletar", new { id=item.Id})
+            </th>
+        </tr>
+    }
+</table>

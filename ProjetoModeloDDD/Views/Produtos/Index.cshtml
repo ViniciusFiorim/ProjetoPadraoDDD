@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ProjetoModeloDDD.ViewModels.ProdutoViewModel>
+
+@{
+    ViewBag.Title = "IndexProduto";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New",  "CreateProduto")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(Model =>  Model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model =>  Model.Valor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model =>  Model.Ativo)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayFor(ModelItem =>  item.Nome)
+            </th>
+            <th>
+                @Html.DisplayFor(ModelItem =>  item.Valor)
+            </th>
+            <th>
+                @Html.DisplayFor(ModelItem =>  item.Ativo)
+            </th>
+            <th>
+                @Html.ActionLink("Edit", "Editar", new { id=item.Id}) | 
+                @Html.ActionLink("Details", "Detalhes", new { id=item.Id}) | 
+                @Html.ActionLink("Delete", "Deletar", new { id=item.Id})
+            </th>
+        </tr>
+    }
+</table>
