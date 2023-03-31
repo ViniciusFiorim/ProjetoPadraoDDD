@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using Domain.Interfaces;
+using Domain.Interfaces.Repositories;
 using Infra.Data.Context;
 
 namespace Infra.Data.Repositories

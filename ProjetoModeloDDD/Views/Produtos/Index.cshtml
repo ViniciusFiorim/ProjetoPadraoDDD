@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ProjetoModeloDDD.ViewModels.ProdutoViewModel>
 
 @{
-    ViewBag.Title = "IndexProduto";
+    ViewBag.Title = "Produtos";
 }
 
-<h2>Index</h2>
+<h2>Produtos</h2>
 
 <p>
-    @Html.ActionLink("Create New",  "CreateProduto")
+    @Html.ActionLink("Novo",  "CreateProduto")
 </p>
 
 <table class="table">
@@ -35,9 +35,9 @@
                 @Html.DisplayFor(ModelItem =>  item.Ativo)
             </th>
             <th>
-                @Html.ActionLink("Edit", "Editar", new { id=item.Id}) | 
-                @Html.ActionLink("Details", "Detalhes", new { id=item.Id}) | 
-                @Html.ActionLink("Delete", "Deletar", new { id=item.Id})
+                @Html.ActionLink("Editar", "Editar", new { id=item.Id}) | 
+                @Html.ActionLink("Detalhes", "Detalhes", new { id=item.Id}) | 
+                @Html.ActionLink("Remover", "Deletar", new { id=item.Id})
             </th>
         </tr>
     }
