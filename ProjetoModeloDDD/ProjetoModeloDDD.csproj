@@ -179,6 +179,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Views\Clientes\Create.cshtml" />
+    <Content Include="Views\Clientes\Deletar.cshtml" />
+    <Content Include="Views\Clientes\Detalhes.cshtml" />
+    <Content Include="Views\Clientes\Editar.cshtml" />
+    <Content Include="Views\Clientes\Especiais.cshtml" />
     <Content Include="Views\Clientes\Index.cshtml" />
     <Content Include="Views\Produtos\Create.cshtml" />
     <Content Include="Views\Produtos\Index.cshtml" />
