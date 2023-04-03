@@ -21,6 +21,9 @@
         <th>
             @Html.DisplayNameFor(Model =>  Model.Ativo)
         </th>
+        <th>
+            @Html.DisplayNameFor(Model =>  Model.Cliente)
+        </th>
     </tr>
     @foreach (var item in Model)
     {
@@ -33,6 +36,9 @@
             </th>
             <th>
                 @Html.DisplayFor(ModelItem =>  item.Ativo)
+            </th>
+            <th>
+                @Html.DisplayFor(ModelItem => item.Cliente.Nome)
             </th>
             <th>
                 @Html.ActionLink("Editar", "Editar", new { id=item.Id}) | 

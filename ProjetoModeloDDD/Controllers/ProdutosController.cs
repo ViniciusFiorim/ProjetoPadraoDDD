@@ -40,7 +40,7 @@ namespace ProjetoModeloDDD.Controllers
 
         public ActionResult Create()
         {
-            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "ClienteId", "Nome");
+            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "Id", "Nome");
             ViewBag.Message = "Novo Produto";
             return View();
         }
@@ -57,7 +57,7 @@ namespace ProjetoModeloDDD.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "ClienteId", "Nome", produto.ClienteId);
+            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "Id", "Nome", produto.ClienteId);
             return View(produto);
         }
 
