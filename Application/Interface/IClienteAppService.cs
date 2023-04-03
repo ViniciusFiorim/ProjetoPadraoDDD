@@ -5,6 +5,6 @@ namespace Application.Interface
 {
     public interface IClienteAppService : IAppServiceBase<Cliente>
     {
-        IEnumerable<Cliente> ObterClientesEspeciais(IEnumerable<Cliente> getAll);
+        IEnumerable<Cliente> ObterClientesEspeciais();
     }
 }

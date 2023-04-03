@@ -3,7 +3,7 @@ using Application.Interface;
 using Domain.Entities.Produto;
 using Domain.Interfaces.Services;
 
-namespace Application
+namespace Application.Service
 {
     public class ProdutoAppService : AppServiceBase<Produto>, IProdutoAppService
     {

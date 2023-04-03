@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Application.Interface;
 using Domain.Interfaces.Services;
 
-namespace Application
+namespace Application.Service
 {
     public class AppServiceBase<TEntity> : IDisposable, IAppServiceBase<TEntity> where TEntity : class
     {

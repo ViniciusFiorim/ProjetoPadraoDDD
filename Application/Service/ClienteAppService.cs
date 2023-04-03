@@ -3,7 +3,7 @@ using Application.Interface;
 using Domain.Entities.Cliente;
 using Domain.Interfaces.Services;
 
-namespace Application
+namespace Application.Service
 {
     public class ClienteAppService : AppServiceBase<Cliente>, IClienteAppService
     {
@@ -13,7 +13,7 @@ namespace Application
             _clienteService = clienteService;
         }
 
-        public IEnumerable<Cliente> ObterClientesEspeciais(IEnumerable<Cliente> getAll)
+        public IEnumerable<Cliente> ObterClientesEspeciais()
         {
             return _clienteService.ObterClientesEspeciais(_clienteService.GetAll());
         }
