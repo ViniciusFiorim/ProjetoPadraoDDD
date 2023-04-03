@@ -6,18 +6,38 @@
 
 <h2>@ViewBag.Message</h2>
 
-<p>
-    <b>Nome completo: </b> @Html.DisplayFor(Model => Model.Nome) @Html.DisplayFor(Model => Model.SobreNome)
-</p>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <div  class="form-group">
+            <div class="col-md-10">
+               <b>Nome completo: </b> @Html.DisplayFor(Model => Model.Nome) @Html.DisplayFor(Model => Model.SobreNome)
+            </div>
+        </div>
+        
+        <div  class="form-group">
+            <div class="col-md-10">
+                <b>E-Mail: </b> @Html.DisplayFor(Model => Model.Email)
+            </div>
+        </div>
+        
+        <div  class="form-group">
+            <div class="col-md-10">
+                <b>Ativo: </b> @Html.DisplayFor(Model => Model.Ativo)
+            </div>
+        </div>
+        
+        <div  class="form-group">
+            <div  class="col-md-offset-2 col-md-10">
+                <input  type="submit" value="Deletar" class="btn btn-default">
+            </div>
+        </div>
+        
+    </div>
+}
 
-<p>
-    <b>E-Mail: </b> @Html.DisplayFor(Model => Model.Email)
-</p>
-
-<p>
-    <b>Ativo: </b> @Html.DisplayFor(Model => Model.Ativo)
-</p>
-
-<div  class="col-md-offset-2 col-md-10">
-    <input  type="submit" value="Deletar" class="btn btn-default">
+<div>
+    @Html.ActionLink("<< Voltar", "Index")
 </div>

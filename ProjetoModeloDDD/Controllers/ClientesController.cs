@@ -99,7 +99,7 @@ namespace ProjetoModeloDDD.Controllers
             return View(clienteViewModel);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("Deletar")]
         [ValidateAntiForgeryToken]
         public ActionResult DeletarConfirmado(int id)
         {
