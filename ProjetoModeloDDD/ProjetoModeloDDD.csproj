@@ -185,6 +185,9 @@
     <Content Include="Views\Clientes\Especiais.cshtml" />
     <Content Include="Views\Clientes\Index.cshtml" />
     <Content Include="Views\Produtos\Create.cshtml" />
+    <Content Include="Views\Produtos\Deletar.cshtml" />
+    <Content Include="Views\Produtos\Detalhes.cshtml" />
+    <Content Include="Views\Produtos\Editar.cshtml" />
     <Content Include="Views\Produtos\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
