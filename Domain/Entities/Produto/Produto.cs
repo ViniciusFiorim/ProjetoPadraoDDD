@@ -6,7 +6,7 @@ namespace Domain.Entities.Produto
     {
         public string Nome { get; set; }
         public decimal Valor { get; set; }
-        public int? ClienteId { get; set; }
+        public int ClienteId { get; set; }
 
         #region FK's
         

@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using Application.Interface;
 using AutoMapper;
 using Domain.Entities.Produto;
+using Domain.Interfaces.Services;
 using ProjetoModeloDDD.ViewModels;
 
 namespace ProjetoModeloDDD.Controllers
@@ -10,10 +11,12 @@ namespace ProjetoModeloDDD.Controllers
     public class ProdutosController : Controller
     {
         private readonly IProdutoAppService _produtoApp;
+        private readonly IClienteService _clienteApp;
 
-        public ProdutosController(IProdutoAppService produtoApp)
+        public ProdutosController(IProdutoAppService produtoApp, IClienteService clienteApp)
         {
             _produtoApp = produtoApp;
+            _clienteApp = clienteApp;
         }
 
         [HttpGet]
@@ -37,6 +40,7 @@ namespace ProjetoModeloDDD.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "ClienteId", "Nome");
             ViewBag.Message = "Novo Produto";
             return View();
         }
@@ -53,6 +57,7 @@ namespace ProjetoModeloDDD.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "ClienteId", "Nome", produto.ClienteId);
             return View(produto);
         }
 
