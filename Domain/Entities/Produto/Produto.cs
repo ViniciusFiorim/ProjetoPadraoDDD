@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Domain.Entities.Produto
+﻿namespace Domain.Entities.Produto
 {
     public class Produto : BaseEntity
     {
