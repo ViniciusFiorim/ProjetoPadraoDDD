@@ -28,7 +28,6 @@ namespace ProjetoModeloDDD.ViewModels
 
         [Required(ErrorMessage = "Campo obrigatório")]
         [MaxLength(11, ErrorMessage = "Máximo {0} caracteres")]
-        [EmailAddress(ErrorMessage = "Informe um celular válido")]
         [DisplayName("Celular")]
         public string Celular { get; set; }
         
