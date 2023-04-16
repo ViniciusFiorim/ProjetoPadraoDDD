@@ -8,6 +8,8 @@ namespace Domain.Entities.Cliente
         public string Nome { get; set; }
         public string SobreNome { get; set; }
         public string Email { get; set; }
+        public string Celular { get; set; }
+        public string Cep { get; set; }
 
         #region Colection
 
