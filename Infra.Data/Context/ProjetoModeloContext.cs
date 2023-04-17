@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.SqlServer;
 using System.Linq;
 using Domain.Entities.Cliente;
 using Domain.Entities.Produto;
@@ -55,7 +56,7 @@ namespace Infra.Data.Context
             // for the 'System.Data.SqlClient' ADO.NET provider could not be loaded. 
             // Make sure the provider assembly is available to the running application. 
             // See http://go.microsoft.com/fwlink/?LinkId=260882 for more information.
-            var instance = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
+            var instance = SqlProviderServices.Instance;
         }
 
         public override int SaveChanges()

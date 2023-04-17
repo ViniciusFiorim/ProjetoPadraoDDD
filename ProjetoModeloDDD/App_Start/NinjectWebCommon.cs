@@ -1,23 +1,23 @@
-﻿using Application;
+﻿using System;
+using System.Web;
 using Application.Interface;
 using Application.Service;
 using Domain.Interfaces.Repositories;
 using Domain.Interfaces.Services;
 using Domain.Services;
 using Infra.Data.Repositories;
+using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+using Ninject;
+using Ninject.Web.Common;
+using Ninject.Web.Common.WebHost;
+using ProjetoModeloDDD;
+using WebActivatorEx;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ProjetoModeloDDD.NinjectorWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(ProjetoModeloDDD.NinjectorWebCommon), "Stop")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NinjectorWebCommon), "Start")]
+[assembly: ApplicationShutdownMethod(typeof(NinjectorWebCommon), "Stop")]
 
 namespace ProjetoModeloDDD
 {
-    using System;
-    using System.Web;
-    using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-    using Ninject;
-    using Ninject.Web.Common;
-    using Ninject.Web.Common.WebHost;
-    
     public class NinjectorWebCommon
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
