@@ -50,6 +50,9 @@
       <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Infra.Data, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Bin\Infra.Data.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Ninject, Version=3.3.3.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.3\lib\net45\Ninject.dll</HintPath>
@@ -228,10 +231,6 @@
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{a0a3a59c-3e2e-4528-81ed-78912fb59a1c}</Project>
       <Name>Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Infra.Data\Infra.Data.csproj">
-      <Project>{c75e33d6-3cce-4964-8812-0e6052441e93}</Project>
-      <Name>Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

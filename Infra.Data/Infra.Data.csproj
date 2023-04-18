@@ -39,6 +39,10 @@
       <Project>{a0a3a59c-3e2e-4528-81ed-78912fb59a1c}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ProjetoModeloDDD\ProjetoModeloDDD.csproj">
+      <Project>{d3a4f0db-8811-4560-9814-39d752fcf3a2}</Project>
+      <Name>ProjetoModeloDDD</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\ProjetoModeloContext.cs" />
